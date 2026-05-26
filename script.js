@@ -132,18 +132,6 @@ const modal = document.getElementById("modal");
 
         });
 
-            const light = document.querySelector(".cursor-light");
-
-                if (light) {
-
-                    document.addEventListener("mousemove", (e) => {
-
-                    light.style.left = e.clientX + "px";
-                    light.style.top = e.clientY + "px";
-
-                    });
-                }
-
             const header = document.querySelector("header");
 
                 if (header) {
