@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>My Portfolio</title>
+        <title>Front-End Developer Portfolio</title>
         <link rel="stylesheet" href="style.css">
     </head>
 
@@ -18,17 +18,23 @@
         <div class="particles"></div>
 
         <header>
-                <h1>My Portfolio</h1>
+                <h1>Front-End Developer Portfolio</h1>
                 <nav>
                 <a href="about.html">About</a>
                 <a href="#works">Works</a>
                 <a href="#contact">Contact</a>
+                <a href="https://github.com/あなたのID"
+                    target="_blank">
+                    GitHub
+                </a>
                 </nav>
         </header>
 
         <section class="hero">
                 <h1 id="typing"></h1>
-                <p>Web Design / Front-End</p>
+                <p>HTML/CSS/JavaScriptを使用した
+                    Front-End Web開発を行っています。
+                </p>
 
                 <a href="#works" class="btn">
                     View Works
@@ -37,7 +43,12 @@
 
         <section id="about">
                 <h2>About</h2>
-                <p>HTML/CSSを学習中です。</p>
+                <p>HTML/CSS/JavaScriptを使用した
+                    Webサイト制作やUIデザインを行っています。<br>
+
+                    レスポンシブ対応やアニメーションを活用した、
+                    動きのあるWebサイト制作が得意です。
+                </p>
         </section>
 
         <section id="works">
@@ -47,13 +58,13 @@
             <div class="card hidden">
                 <img src="images/PC.jpg" alt="作品1">
 
-                <h3>作品1</h3>
-                <p>ポートフォリオサイト</p>
+                <h3>Cafe Landing Page</h3>
+                <p>レスポンシブ対応のカフェサイト</p>
 
                 <a href="javascript:void(0)"
                     class="btn"
-                    data-title="ポートフォリオサイト"
-                    data-text="HTML/CSSで制作したポートフォリオサイトです。">
+                    data-title="Cafe Landing Page"
+                    data-text="HTML/CSS/JavaScriptを使用して制作。レスポンシブ対応で、アニメーションも実装しました。">
 
                     view More
                 </a>
@@ -62,13 +73,16 @@
             <div class="card hidden">
                 <img src="images/カフェ.jpg" alt="作品2">
 
-                <h3>作品2</h3>
-                <p>カフェLP</p>
+                <h3>Coffee Shop Website</h3>
+                <p>レスポンシブ対応のカフェサイト</p>
 
                 <a href="javascript:void(0)"
                     class="btn"
-                    data-title="カフェLP"
-                    data-text="カフェのランディングページを制作しました。">
+                    data-title="Coffee Shop Website"
+                    data-text="HTML/CSS/JavaScriptを使用して制作。
+                    レスポンシブ対応、
+                    スクロールアニメーション、
+                    モーダル実装を行いました。">
 
                     view More
                 </a>
@@ -77,13 +91,16 @@
             <div class="card hidden">
                 <img src="images/game.jpg" alt="作品3">
 
-                <h3>作品3</h3>
-                <p>ゲームUI</p>
+                <h3>Game UI Design</h3>
+                <p>ゲーム風UIデザインサイト</p>
 
                 <a href="javascript:void(0)"
                     class="btn"
-                    data-title="ゲームUI"
-                    data-text="ゲーム風UIデザインを制作しました。">
+                    data-title="Game UI Design"
+                    data-text="ゲーム風UIを意識して制作。
+                                ホバーアニメーションや
+                                グラスモーフィズムを取り入れ、
+                                近未来感のあるUIデザインを実装しました。">
 
                     view More
                 </a>
@@ -95,7 +112,9 @@
 
         <section id="contact">
                 <h2>Contact</h2>
-                <p>example@gmail.com</p>
+                <p>ご依頼・ご相談はお気軽にご連絡ください。<br>
+                    Email: love1089001@gmail.com
+                </p>
         </section>
 
         <div class="modal" id="modal">
@@ -177,7 +196,7 @@
 
             showElements();
 
-            const text = "Creative Developer";
+            const text = "Front-End Web Developer";
 
             const typing = document.getElementById("typing");
 
@@ -300,6 +319,16 @@
 
                 hero.style.backgroundPositionY =
                 scrollY * 0.4 + "px";
+            });
+
+            window.addEventListener("click", (e) => {
+
+                if(e.target === modal){
+
+                    modal.style.display = "none";
+
+                }
+
             });
 
         </script>
